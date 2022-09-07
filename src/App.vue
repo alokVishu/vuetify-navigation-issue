@@ -14,7 +14,7 @@ const { locale } = useI18n({ useScope: 'global' })
           <v-list>
             <v-list-item>
               <RouterLink to="/" class="me-3">
-                <i18n-t scope='global' keypath="message.home"></i18n-t>
+                {{ $t('message.home') }}
               </RouterLink>
             </v-list-item>
             <v-list-item>
