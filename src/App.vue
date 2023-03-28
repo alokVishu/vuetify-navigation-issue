@@ -28,9 +28,9 @@ import { RouterLink, RouterView } from 'vue-router';
 
           <!-- 👉 Pages -->
           <RouterView v-slot="{ Component }">
-            <Transition name="slide-x-reverse-transition" mode="out-in">
+            <v-slide-x-reverse-transition hide-on-leave>
               <Component :is="Component" />
-            </Transition>
+            </v-slide-x-reverse-transition>
           </RouterView>
         </v-col>
       </v-row>
