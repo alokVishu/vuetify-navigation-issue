@@ -1,29 +1,18 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
-  
+
 const drawer = ref(false)
 </script>
 
 <template>
   <div>
-    <v-btn
-      color="primary"
-      @click.stop="drawer = !drawer"
-    >
+    <v-btn color="primary" @click.stop="drawer = !drawer">
       Toggle
     </v-btn>
 
-    <v-navigation-drawer
-      v-model="drawer"
-      location="end"
-      :width="400"
-      temporary
-    >
+    <v-navigation-drawer v-model="drawer" location="end" :width="400" temporary>
       <VCard flat>
-        <v-list-item
-          prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
-          title="John Leider"
-        ></v-list-item>
+        <v-list-item prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg" title="John Leider"></v-list-item>
 
         <v-divider></v-divider>
 
